@@ -788,34 +788,7 @@ src="https://www.facebook.com/tr?id=1164058385518324&ev=PageView&noscript=1"
   
   
 
-    <!-- Cabe�alho -->
-    <body><header class="header">
-      <div class="container header-container">
-        <div class="logo">
-          <img src="images/images-logo.webp" alt="Logo do Privacy" class="logo-image">
-        </div>
-      </div>
-    </header>
-
-    <!-- Conte�do Principal -->
-    <div class="promo-banner" id="promoBanner">ESSA PROMOÇÃO É VÁLIDA ATÉ 31/05/2025</div>
-
-  <script>
-    function getFormattedDate(daysAhead = 3) {
-      const today = new Date();
-      today.setDate(today.getDate() + daysAhead);
-      const dd = String(today.getDate()).padStart(2, '0');
-      const mm = String(today.getMonth() + 1).padStart(2, '0');
-      const yyyy = today.getFullYear();
-      return `${dd}/${mm}/${yyyy}`;
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-      const banner = document.getElementById("promoBanner");
-      const expirationDate = getFormattedDate(0); // Altere o número para mudar os dias
-      banner.textContent = `ESSA PROMOÇÃO É VÁLIDA ATÉ ${expirationDate}`;
-    });
-  </script>
+   
     <main class="container">
       <!-- Se��o de Perfil com Banner e Foto -->
       <div class="profile-section" style="margin-bottom: 50px">
