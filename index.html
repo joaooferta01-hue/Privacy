@@ -1,125 +1,24 @@
-html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Checkout | Privacy</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
-  {margin:0;padding:0;box-sizing:border-box;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
-  body{background:f7f8fa;color:1a1a1a;display:flex;align-items:center;justify-content:center;min-height:100vh}
-  .container{width:100%;max-width:1024px;display:flex;background:fff;border-radius:8px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.08)}
-  .summary{flex:1 1 420px;background:fafbfc;padding:48px 40px}
-  .details{flex:1 1 604px;padding:48px 40px}
-  h1{font-size:28px;font-weight:700;margin-bottom:24px}
-  h2{font-size:20px;font-weight:600;margin-bottom:16px}
-  .product{display:flex;gap:16px;margin-bottom:12px}
-  .product img{width:80px;height:80px;border-radius:6px;object-fit:cover}
-  .product-info h3{font-size:16px;font-weight:600;margin-bottom:4px}
-  .product-info p{font-size:14px;color:6b6b6b}
-  .price{font-size:16px;font-weight:600;color:1a1a1a;margin-left:auto}
-  .divider{height:1px;background:e5e7eb;margin:24px 0}
-  .summary-row{display:flex;justify-content:space-between;font-size:15px;margin-bottom:8px}
-  .summary-row.total{font-weight:700;font-size:18px;margin-top:12px}
-  .form-group{margin-bottom:20px}
-  label{display:block;font-size:14px;font-weight:600;margin-bottom:6px}
-  input,select{width:100%;padding:12px 14px;border:1px solid d0d3d9;border-radius:6px;font-size:15px}
-  input::placeholder{color:9ca3af}
-  .half{display:flex;gap:16px}
-  .half .form-group{flex:1}
-  .btn{background:0064ff;color:fff;border:none;border-radius:6px;padding:14px;font-size:16px;font-weight:600;width:100%;cursor:pointer}
-  .btn:hover{background:0058e6}
-  .badge{background:e5e7eb;color:1a1a1a;font-size:12px;padding:4px 8px;border-radius:4px;display:inline-block;margin-bottom:8px}
-  @media(max-width:768px){.container{flex-direction:column}}
-</style>
+  <meta charset="UTF-8">
+  <title>martinaolvr</title>
+  <style>
+    body{background:#000;color:#fff;margin:0;padding:20px;font-family:Arial,Helvetica,sans-serif}
+    header{text-align:center;font-size:28px;margin-bottom:20px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+    .grid img{width:100%;border-radius:8px;cursor:pointer}
+  </style>
 </head>
 <body>
-
-<div class="container">
-  <!-- Resumo -->
-  <section class="summary">
-    <h1>Resumo</h1>
-
-    <div class="product">
-      <img src="https://placehold.co/80x80/1a1a1a/fff?text=🎁" alt="">
-      <div class="product-info">
-        <span class="badge">Mensal</span>
-        <h3>Martina Oliveira</h3>
-        <p>Plano Privacy Pro</p>
-      </div>
-      <div class="price">R$ 19,90</div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="summary-row">
-      <span>Subtotal</span>
-      <span>R$ 19,90</span>
-    </div>
-    <div class="summary-row">
-      <span>Desconto (primeira compra)</span>
-      <span>- R$ 0,00</span>
-    </div>
-    <div class="summary-row total">
-      <span>Total</span>
-      <span>R$ 19,90</span>
-    </div>
-  </section>
-
-  <!-- Checkout -->
-  <section class="details">
-    <h2>Dados pessoais</h2>
-
-    <form>
-      <div class="form-group">
-        <label>E-mail</label>
-        <input type="email" placeholder="voce@exemplo.com">
-      </div>
-
-      <div class="half">
-        <div class="form-group">
-          <label>Nome</label>
-          <input type="text" placeholder="Primeiro">
-        </div>
-        <div class="form-group">
-          <label>Sobrenome</label>
-          <input type="text" placeholder="Último">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <label>CPF</label>
-        <input type="text" placeholder="000.000.000-00">
-      </div>
-
-      <div class="form-group">
-        <label>Telefone</label>
-        <input type="tel" placeholder="(00) 00000-0000">
-      </div>
-
-      <h2 style="margin-top:32px">Pagamento</h2>
-
-      <div class="form-group">
-        <label>Número do cartão</label>
-        <input type="text" placeholder="0000 0000 0000 0000">
-      </div>
-
-      <div class="half">
-        <div class="form-group">
-          <label>Vencimento</label>
-          <input type="text" placeholder="MM / AA">
-        </div>
-        <div class="form-group">
-          <label>CVC</label>
-          <input type="text" placeholder="123">
-        </div>
-      </div>
-
-      <button class="btn" type="submit">Finalizar compra • R$ 19,90</button>
-    </form>
-  </section>
-</div>
-
+  <header>martinaolvr</header>
+  <div class="grid">
+    <img src="https://i.imgur.com/1.jpg">
+    <img src="https://i.imgur.com/2.jpg">
+    <img src="https://i.imgur.com/3.jpg">
+    <img src="https://i.imgur.com/4.jpg">
+    <img src="https://i.imgur.com/5.jpg">
+    <img src="https://i.imgur.com/6.jpg">
+  </div>
 </body>
 </html>
