@@ -581,41 +581,92 @@
       </div>
     </div>
 
-    <!-- BOTÃO DO POPUP -->
-<button class="subscription-button-popup checkout-link-popup" data-plan="mensal" data-value="2490">
-    <span>Assine agora</span>
-    <span>De <span class="old-price">R$ 47,00</span> por R$ 9,90</span>
+    <!-- ==========  BOTÃO POP-UP (LARANJA)  ========== -->
+<button class="subscription-button-popup" data-plan="mensal" data-value="2490">
+  <span>Assine agora</span>
+  <span>De <s>R$ 47,00</s> por R$ 9,90</span>
 </button>
 
-<!-- PLANO MENSAL -->
-<a href="https://www.ggcheckout.com/checkout/v2/cgXwwSAIelmT85CTY1eg" 
-   class="subscription-button" 
-   data-plan="mensal" 
-   data-value="2490" 
+<!-- ==========  BOTÃO MENSAL (LARANJA)  ========== -->
+<a href="https://www.ggcheckout.com/checkout/v2/cgXwwSAIelmT85CTY1eg"
+   class="subscription-button"
+   data-plan="mensal"
+   data-value="2490"
    target="_blank">
-   <span>Mensal</span>
-   <span>De <span class="old-price">R$ 47,00</span> por <p>R$ 9,90</p></span>
+  <span>Mensal</span>
+  <span>De <s>R$ 47,00</s> por R$ 9,90</span>
 </a>
 
-<!-- PLANO TRIMESTRAL -->
-<a href="https://www.ggcheckout.com/checkout/v2/PJs23TpBx0fnDmG95Irs" 
-   class="subscription-button" 
-   data-plan="trimestral" 
-   data-value="4990" 
+<!-- ==========  BOTÃO TRIMESTRAL (LARANJA)  ========== -->
+<a href="https://www.ggcheckout.com/checkout/v2/PJs23TpBx0fnDmG95Irs"
+   class="subscription-button"
+   data-plan="trimestral"
+   data-value="4990"
    target="_blank">
-   <span>Trimestral</span>
-   <span>De <span class="old-price">R$ 197,00</span> por <strong><p>R$ 19,90</p></strong></span>
+  <span>Trimestral</span>
+  <span>De <s>R$ 197,00</s> por R$ 19,90</span>
 </a>
 
-<!-- PLANO ANUAL -->
-<a href="https://www.ggcheckout.com/checkout/v2/7c4S5IvyUHIjMc0Ns6bB" 
-   class="subscription-button" 
-   data-plan="anual" 
-   data-value="5990" 
+<!-- ==========  BOTÃO ANUAL (LARANJA)  ========== -->
+<a href="https://www.ggcheckout.com/checkout/v2/7c4S5IvyUHIjMc0Ns6bB"
+   class="subscription-button"
+   data-plan="anual"
+   data-value="5990"
    target="_blank">
-   <span>Anual</span>
-   <span>De <span class="old-price">R$ 397,00</span> por R$ 29,90</span>
+  <span>Anual</span>
+  <span>De <s>R$ 397,00</s> por R$ 29,90</span>
 </a>
+
+<!-- ==========  ESTILO ÚNICO (basta colar 1 vez na <head> ou no seu CSS)  ========== -->
+<style>
+.subscription-button,
+.subscription-button-popup{
+  display:inline-flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  width:100%;
+  max-width:320px;
+  margin:12px auto;
+  padding:16px 32px;
+  border:none;
+  border-radius:12px;
+  font-family:'Montserrat',sans-serif;
+  font-size:16px;
+  font-weight:600;
+  color:fff;
+  cursor:pointer;
+  text-decoration:none;
+  background:linear-gradient(135deg,ff6b3d 0%,ff8f5f 100%);
+  box-shadow:0 4px 6px rgba(255,107,61,.1);
+  transition:.3s cubic-bezier(.4,0,.2,1);
+  animation:pulse 2s infinite;
+  position:relative;
+  overflow:hidden;
+}
+.subscription-button span:first-child,
+.subscription-button-popup span:first-child{
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+.subscription-button span:last-child,
+.subscription-button-popup span:last-child{
+  font-size:14px;
+  opacity:.95;
+}
+.subscription-button:hover,
+.subscription-button-popup:hover{
+  transform:translateY(-2px) scale(1.02);
+  box-shadow:0 8px 20px rgba(255,107,61,.3);
+}
+@keyframes pulse{
+  0%{box-shadow:0 4px 6px rgba(255,107,61,.1)}
+  50%{box-shadow:0 4px 15px rgba(255,107,61,.4)}
+  100%{box-shadow:0 4px 6px rgba(255,107,61,.1)}
+}
+</style>
     <!-- Abas de Conteúdo -->
     <div class="content-tabs">
       <div class="tabs">
