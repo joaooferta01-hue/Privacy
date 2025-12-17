@@ -608,28 +608,32 @@
 
 <!-- =====  ESTILO  ===== -->
 <style>
+/* remove margens externas */
+body{
+  margin:0;
+}
 .assinaturas-wrapper{
   display:flex;
   flex-direction:column;
-  align-items:center;
   gap:12px;
-  width:100%;
-  max-width:240px;   /* ← largura total do card */
-  margin:0 auto;
+  width:100%;              /* ocupa largura total */
+  padding:0 4vw;            /* pequeno recuo nas laterais */
   font-family:'Montserrat',sans-serif;
+  box-sizing:border-box;
 }
 .titulo-assinaturas{
   margin:0 0 6px;
   font-size:14px;
   font-weight:600;
   color:#fff;
+  align-self:flex-start;    /* colado à esquerda */
 }
 .btn-assinatura{
   display:flex;
   justify-content:space-between;
   align-items:center;
   width:100%;
-  padding:10px 14px;
+  padding:14px 18px;
   border:none;
   border-radius:8px;
   background:#ff6b3d;
@@ -641,7 +645,7 @@
   transition:.25s;
 }
 .btn-assinatura:hover{
-  transform:scale(1.03);
+  transform:scale(1.01);
   box-shadow:0 4px 12px rgba(255,107,61,.35);
 }
 </style>
