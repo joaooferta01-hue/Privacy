@@ -227,98 +227,29 @@
       margin-top: 0.5rem;
     }
 
-    /* Subscription Cards */
-    .subscriptions {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      padding: 20px;
+    /* ---------- BOTÕES EXATOS DA IMAGEM ---------- */
+    .pricing-wrapper{
+      display:flex;
+      gap:16px;              /* espaçamento idêntico ao da imagem */
+      justify-content:center;
+      margin:20px 0 40px;
     }
-
-    .subscription-card {
-      background: #fff;
-      border-radius: 16px;
-      padding: 24px;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease;
+    .banner-btn{
+      background:#ff6500;    /* cor do banner */
+      color:#000;            /* texto preto */
+      border-radius:12px;    /* cantos arredondados */
+      padding:16px 24px;     /* espaçamento interno */
+      text-align:center;
+      min-width:140px;
+      box-shadow:0 2px 6px rgba(0,0,0,.10);
+      font-size:18px;
+      font-weight:700;
+      line-height:1.2;
     }
-
-    .subscription-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .subscription-card.destaque {
-      border: 2px solid #ea580c;
-      box-shadow: 0 6px 16px rgba(234, 88, 12, 0.25);
-    }
-
-    .subscription-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-      color: #222;
-    }
-
-    .price {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #ea580c;
-      margin-bottom: 10px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: #eee;
-      color: #333;
-      font-size: 0.9rem;
-      padding: 4px 10px;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .tag.secundario {
-      background: #ffefc5;
-      color: #b58900;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      width: 100%;
-      max-width: 200px;
-    }
-
-    .btn.primary {
-      background: #ea580c;
-      color: #fff;
-      border: none;
-    }
-
-    .btn.primary:hover {
-      background: #c2410c;
-    }
-
-    .btn.outline {
-      background: transparent;
-      color: #ea580c;
-      border: 2px solid #ea580c;
-    }
-
-    .btn.outline:hover {
-      background: #ea580c;
-      color: #fff;
-    }
-
-    .bonus {
-      margin-top: 12px;
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: #ff4f4f;
+    .banner-btn p{
+      margin:0;
+      font-size:16px;
+      font-weight:600;
     }
 
     /* Tabs */
@@ -650,27 +581,17 @@
       </div>
     </div>
 
-    <!-- Seção de Assinaturas -->
-    <section class="subscriptions">
-      <div class="subscription-card destaque">
-        <h3>30 DIAS</h3>
-        <p class="price">R$ 12,90</p>
-        <span class="tag">🔥 PROMOÇÃO SOMENTE HOJE </span>
-        <a href="https://seguro.modelosprivacy.club/api/public/shopify?product=1677985117847&store=16779" target="_blank">
-          <button class="btn primary">Assinar Agora</button>
-        </a>
-        <p class="bonus">+ 1 MÊS TOTALMENTE GRÁTIS!</p>
+    <!-- BOTÕES IGUAIS À IMAGEM -->
+    <div class="pricing-wrapper">
+      <div class="banner-btn">
+        <h3>3 meses</h3>
+        <p>R$ 59,97</p>
       </div>
-
-      <div class="subscription-card">
-        <h3>3 MESES</h3>
-        <p class="price">R$ 29,90</p>
-        <span class="tag secundario">💸 Economia</span>
-        <a href="https://seguro.modelosprivacy.club/api/public/shopify?product=1677936859615&store=16779" target="_blank">
-          <button class="btn outline">Assinar Agora</button>
-        </a>
+      <div class="banner-btn">
+        <h3>6 meses</h3>
+        <p>R$ 119,94</p>
       </div>
-    </section>
+    </div>
 
     <!-- Abas de Conteúdo -->
     <div class="content-tabs">
